@@ -24,7 +24,7 @@ We help small businesses, students, and local brands stand out online with clean
         <a href="about.html" style="color:white; text-decoration:none; margin:10px;">About Us</a>
     </nav>
 
-    <!-- Main Section -->
+    <!-- Main Section of the webeite-->
     <main style="padding:30px; text-align:center;">
        <div style="background-color:#ffffff; padding:25px; border-radius:15px; margin:40px auto; max-width:700px;">
     <h2 style="color:#ff6f61;">Our Services</h2>
@@ -81,9 +81,53 @@ We help small businesses, students, and local brands stand out online with clean
         <p>BrightBiz Solutions © 2026 | Email: brightbizsolutions0@gmail.com</p>
     </footer>
 
+    <!-- Format of the Scroll to Top Button -->
+<div id="scrollTopBtn"
+     style="
+        position:fixed;
+        bottom:25px;
+        right:25px;
+        background-color:#ff6f61;
+        color:white;
+        width:45px;
+        height:45px;
+        border-radius:50%;
+        display:none;
+        align-items:center;
+        justify-content:center;
+        font-size:22px;
+        cursor:pointer;
+        box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        z-index:1000;
+     ">
+    ↑
+</div>
+
+<!--now using java script to add the function of the button that will scroll up when the user scrols bwlow 200 pixsels-->
+
+<script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollBtn.style.display = "flex";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    };
+
+    scrollBtn.onclick = function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+</script>
+
+
+
+
 </body>
 </html>
-
-
 
 
