@@ -1,141 +1,243 @@
-    <!DOCTYPE html>
-    <html>
-        <head>
-        <meta charset="UTF-8">
-        <title>BrightBiz Solutions</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BrightBiz Solutions</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BrightBiz Solutions provides simple and affordable websites for small businesses and students.">
+  <meta name="google-site-verification" content="-WS2EI3Y6h50yy45_EmhXntzGrDyUUxjkJR6yB3zNTk">
 
-        <meta name="description" content="BrightBiz Solutions provides simple and affordable websites for small businesses and students.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d4d0cd;
+      margin: 0;
+      padding: 0;
+    }
 
-        <meta name="google-site-verification" content="-WS2EI3Y6h50yy45_EmhXntzGrDyUUxjkJR6yB3zNTk">
-    </head>
-    <body style="font-family: Arial, sans-serif; background-color:#fef6f0; margin:0; padding:0;">
+    /* HERO */
+    .hero {
+      min-height: 70vh;
+      background: linear-gradient(135deg, #6e78ff, #c8c2e5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
 
-        <!-- Header -->
-        <header style="background-color:#ff6f61; color:white; padding:30px; text-align:center;">
-            <h1>BrightBiz Solutions</h1>
-            <p>Creative Websites & Simple Solutions for Small Businesses</p>
-            <h2 style="color:#fcfcfc;">Websites That Make Your Business Look Legit</h2>
-            <p style="font-size:17px; color:#fcfbfb; margin-top:10px;">
-    ✔ Live on Google • ✔ Fast response • ✔ Affordable pricing </p>
-    <p style="font-size:18px; margin-top:5px;">
-    We help small businesses, students, and local brands stand out online with clean, colorful, and affordable websites.
-    </p>
+    .hero-card {
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(12px);
+      border-radius: 22px;
+      padding: 50px 40px;
+      max-width: 750px;
+      color: rgb(8, 8, 8);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    }
 
-        </header>
+    .hero-card h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
 
-        <!-- Navigation -->
-        <nav style="background-color:#ffa07a; text-align:center; padding:15px;">
-            <a href="index.html" style="color:white; text-decoration:none; margin:10px;">Home</a> |
-            <a href="contact.html" style="color:white; text-decoration:none; margin:10px;">Contact</a> |
-            <a href="about.html" style="color:white; text-decoration:none; margin:10px;">About Us</a>
-        </nav>
+    .hero-sub {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
 
-        <!-- Main Section of the webeite-->
-        <main style="padding:30px; text-align:center;">
-        <div style="background-color:#ffffff; padding:25px; border-radius:15px; margin:40px auto; max-width:700px;">
-        <h2 style="color:#ff6f61;">Our Services</h2>
+    .hero-features {
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
 
-            <ul style="list-style:none; padding:0; font-size:18px;">
-                <li>✅ Custom Websites</li>
-                <li>✅ Portfolio Pages</li>
-                <li>✅ Small Business Sites</li>
-                <li>✅ Event / Club Pages</li>
-            </ul>
-            <h2 style="color:#ff6f61; margin-top:40px;">How It Works</h2>
+    .hero-price {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
 
-            <p style="font-size:18px; margin:8px 0;">1️⃣ Tell us what you need</p>
-            <p style="font-size:18px; margin:8px 0;">2️⃣ We design your website</p>
-            <p style="font-size:18px; margin:8px 0;">3️⃣ You review & approve</p>
-            <p style="font-size:18px; margin:8px 0;">4️⃣ Your website goes live 🚀</p>
-            <h2 style="color:#ff6f61; margin-top:40px;">Why Choose BrightBiz</h2>
+    .hero-btn {
+      display: inline-block;
+      background: white;
+      color: #0011ff;
+      padding: 14px 34px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-    <ul style="list-style:none; font-size:18px; padding:0;">
-        <li>⚡ Fast delivery</li>
-        <li>💸 Affordable pricing</li>
-        <li>🎨 Clean & colorful designs</li>
-        <li>🤝 Easy communication</li>
-    </ul>
-    <h2 style="color:#ff6f61; margin-top:40px;">Ready to get your website?</h2>
-    <a href="contact.html"
-    style="display:inline-block; background-color:#ff6f61; color:white; padding:15px 25px; margin-top:15px; text-decoration:none; border-radius:30px; font-size:18px;">
-    Get Your Website Now 🚀
-    </a>
-    <p>Contact us today and let’s build something amazing for your business.</p>
-    <p><strong>📞 0336-4509408</strong></p>
-    <p><strong>📧 brightbizsolutions0@gmail.com</strong></p>
+    .hero-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    }
 
-        <h2 style="color:#ff6f61; margin-top:40px;">What Clients Say</h2>
+    /* NAV */
+    nav {
+      background-color: #4a2ccf;
+      text-align: center;
+      padding: 15px;
+    }
 
-    <div style="background-color:#fff; padding:20px; margin:20px auto; border-radius:12px; max-width:600px;">
-        <p>"BrightBiz delivered exactly what we wanted. Simple, clean, and fast!"</p>
-        <strong>— Local Business Owner</strong>
+    nav a {
+      color: rgb(12, 12, 12);
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    /* MAIN */
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .content-box {
+      background-color: white;
+      padding: 25px;
+      border-radius: 15px;
+      margin: 40px auto;
+      max-width: 700px;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #6e78ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .hero-card h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-card">
+      <h1>BrightBiz Solutions</h1>
+
+      <p class="hero-sub">
+        Clean, mobile-friendly websites for small businesses & students.
+      </p>
+
+      <p class="hero-features">
+        ✔ Live on Google &nbsp; • &nbsp; ✔ Fast response &nbsp; • &nbsp; ✔ Affordable pricing
+      </p>
+
+      <p class="hero-price">
+        Websites starting from <strong>$15</strong>
+      </p>
+
+      <a href="contact.html" class="hero-btn">Get Your Website 🚀</a>
     </div>
-    <div style="background-color:#fff; padding:20px; margin:20px auto; border-radius:12px; max-width:600px;">
-        <p>"Very professional and easy to work with. Highly recommended."</p>
-        <strong>— Student Client</strong>
+  </header>
+
+  <!-- CURVE DIVIDER -->
+  <div style="
+    background-color:#fef6f0;
+    height:60px;
+    border-top-left-radius:60px;
+    border-top-right-radius:60px;
+    margin-top:-30px;">
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="about.html">About Us</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <div class="content-box">
+      <h2 style="color:#2532f3;">Our Services</h2>
+      <ul style="list-style:none; padding:0; font-size:18px;">
+        <li> Custom Websites</li>
+        <li> Portfolio Pages</li>
+        <li> Small Business Sites</li>
+        <li> Event / Club Pages</li>
+      </ul>
+
+      <h2 style="color:#2532f3; margin-top:40px;">How It Works</h2>
+      <p>  Tell us what you need</p>
+      <p> We design your website</p>
+      <p> You review & approve</p>
+      <p> Your website goes live 🚀</p>
+
+      <h2 style="color:#2532f3; margin-top:40px;">Why Choose BrightBiz</h2>
+      <ul style="list-style:none; padding:0; font-size:18px;">
+        <li> Fast delivery</li>
+        <li> Affordable pricing</li>
+        <li> Clean & colorful designs</li>
+        <li> Easy communication</li>
+      </ul>
+
+      <h2 style="color:#2532f3; margin-top:40px;">Ready to get your website?</h2>
+      <a href=" contact.html" class="hero-btn">Get Your Website Now </a>
+
+      <p style="margin-top:20px;"><strong>📞 0336-4509408</strong></p>
+      <p><strong>📧 brightbizsolutions0@gmail.com</strong></p>
     </div>
 
+    <h2 style="color:#000000;">What Clients Say</h2>
 
-            <p style="margin-top:10px; font-size:18px;">Call us now: 0336-4509408 - 0336-4509409</p>
-        </main>
-    
-    <hr style="width:60%; border:1px dashed #ff6f61; margin:40px auto;">
-
-
-        <!-- Footer -->
-        <footer style="background-color:#ff6f61; color:white; text-align:center; padding:20px;">
-            <p>BrightBiz Solutions © 2026 | Email: brightbizsolutions0@gmail.com</p>
-        </footer>
-
-        <!-- Format of the Scroll to Top Button -->
-    <div id="scrollTopBtn"
-        style="
-            position:fixed;
-            bottom:25px;
-            right:25px;
-            background-color:#ff6f61;
-            color:white;
-            width:45px;
-            height:45px;
-            border-radius:50%;
-            display:none;
-            align-items:center;
-            justify-content:center;
-            font-size:22px;
-            cursor:pointer;
-            box-shadow:0 5px 15px rgba(0,0,0,0.2);
-            z-index:1000;
-        ">
-        ↑
+    <div class="content-box">
+      <p>"BrightBiz delivered exactly what we wanted. Simple, clean, and fast!"</p>
+      <strong>— Local Business Owner</strong>
     </div>
 
-    <!--now using java script to add the function of the button that will scroll up when the user scrols bwlow 200 pixsels-->
+    <div class="content-box">
+      <p>"Very professional and easy to work with. Highly recommended."</p>
+      <strong>— Student Client</strong>
+    </div>
 
-    <script>
-        const scrollBtn = document.getElementById("scrollTopBtn");
+  </main>
 
-        window.onscroll = function () {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                scrollBtn.style.display = "flex";
-            } else {
-                scrollBtn.style.display = "none";
-            }
-        };
+  <footer>
+    <p>BrightBiz Solutions © 2026 | Email: brightbizsolutions0@gmail.com</p>
+  </footer>
 
-        scrollBtn.onclick = function () {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        };
-    </script>
+  <!-- SCROLL TO TOP -->
+  <div id="scrollTopBtn" style="
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background-color:#ff6f61;
+    color:white;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    z-index:1000;">↑</div>
 
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
 
+    window.onscroll = () => {
+      scrollBtn.style.display =
+        document.documentElement.scrollTop > 200 ? "flex" : "none";
+    };
 
+    scrollBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
 
-    </body>
-    </html>
-
-
+</body>
+</html>
