@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <title>BrightBiz Solutions | Affordable Website Design</title>
   <link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=outfit:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="BrightBiz Solutions provides simple and affordable websites for small businesses and students.">
   <meta name="google-site-verification" content="-WS2EI3Y6h50yy45_EmhXntzGrDyUUxjkJR6yB3zNTk">
+
+  
 
   <style>
     body {
@@ -22,14 +26,19 @@
     /* HERO */
     .hero {
       
- background: 
-      linear-gradient(rgba(110,120,255,0.75), rgba(140,147,247,0.75)),
-      url('https://us.images.westend61.de/0001604234pw/smiling-male-professional-working-on-laptop-at-desk-in-office-BSZF01956.jpg');
+ 
+    background: url("https://us.images.westend61.de/0001604234pw/smiling-male-professional-working-on-laptop-at-desk-in-office-BSZF01956.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 
-   min-height: 100vh;
+   
+min-height: 100vh;
 
    display: flex;
    justify-content: center;   /* horizontal center */
@@ -40,6 +49,10 @@
 
          
     }
+    .hero {
+    padding-top: 120px;
+}
+
 
     .hero-card {
       background: rgba(255, 255, 255, 0.18);
@@ -88,19 +101,7 @@
       box-shadow: 0 12px 25px rgba(0,0,0,0.25);
     }
 
-    /* NAV */
-    nav {
-      background-color: #4a2ccf;
-      text-align: center;
-      padding: 15px;
-    }
-
-    nav a {
-      color: rgb(12, 12, 12);
-      text-decoration: none;
-      margin: 10px;
-      font-weight: bold;
-    }
+    
 
     /* MAIN */
     main {
@@ -128,11 +129,33 @@
       .hero-card h1 {
         font-size: 30px;
       }
+
+       .nav-btn {
+        padding: 8px 16px;
+        font-size: 14px;
     }
+    }
+   
+
+
+
   </style>
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="logo">Bright<span>Biz</span></div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="contact.html" class="nav-btn">Get Started</a>
+</nav>
+
+
 
   <!-- HERO -->
   <header class="hero">
@@ -157,6 +180,7 @@
 
   </header>
 
+
   <!-- CURVE DIVIDER -->
   <div style="
     background-color:#fef6f0;
@@ -166,12 +190,6 @@
     margin-top:-30px;">
   </div>
 
-  <!-- NAV -->
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="about.html">About Us</a>
-  </nav>
 
   <!-- MAIN CONTENT -->
   <main>
@@ -366,16 +384,66 @@ max-width:1000px;
 
   </main>
 
-  <footer>
-    <p>
-BrightBiz Solutions © 2026 | 
-Email: 
-<a href="mailto:brightbizsolutions0@gmail.com" 
-   style="color:white; text-decoration:none; font-weight:bold;">
-brightbizsolutions0@gmail.com
-</a>
-</p>
-  </footer>
+ <footer style="
+background:#1f2340;
+color:white;
+padding:60px 20px 30px 20px;
+">
+
+<div style="
+max-width:1100px;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+gap:40px;
+">
+
+    <!-- Company Info -->
+    <div style="flex:1; min-width:250px;">
+        <h3 style="font-family:'Poppins', sans-serif; margin-bottom:15px;">
+            BrightBiz Solutions
+        </h3>
+        <p style="opacity:0.8; line-height:1.6;">
+            We design clean, modern, and affordable websites for small 
+            businesses and students who want to grow online.
+        </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex:1; min-width:200px;">
+        <h4 style="margin-bottom:15px;">Quick Links</h4>
+        <p><a href="index.html" style="color:white; text-decoration:none;">Home</a></p>
+        <p><a href="about.html" style="color:white; text-decoration:none;">About</a></p>
+        <p><a href="contact.html" style="color:white; text-decoration:none;">Contact</a></p>
+    </div>
+
+    <!-- Contact -->
+    <div style="flex:1; min-width:250px;">
+        <h4 style="margin-bottom:15px;">Contact</h4>
+        <p>Email:</p>
+        <a href="mailto:brightbizsolutions0@gmail.com"
+           style="color:#8c93f7; text-decoration:none; font-weight:bold;">
+           brightbizsolutions0@gmail.com
+        </a>
+    </div>
+
+</div>
+
+<!-- Bottom Line -->
+<div style="
+border-top:1px solid rgba(255,255,255,0.2);
+margin-top:40px;
+padding-top:20px;
+text-align:center;
+opacity:0.7;
+font-size:14px;
+">
+    © 2026 BrightBiz Solutions. All Rights Reserved.
+</div>
+
+</footer>
+
 
   <!-- SCROLL TO TOP -->
   <div id="scrollTopBtn" style="
